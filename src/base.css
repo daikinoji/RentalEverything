@@ -1,0 +1,28 @@
+#nav{
+    background-color: #444;
+    padding: 3px;
+}
+
+
+#nav {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+#nav li {
+    display: inline;
+    margin-right: 1em;
+}
+
+
+#nav li a {
+    font-family: "Trebuchet MS", sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+#nav li a:hover{ 
+    border-bottom: dotted 1px #fff;
+}

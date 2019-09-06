@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Rental Everything</title>
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/check.js"></script>
+    <script type="text/javascript" src="../js/deal.js"></script>
+    <link rel="stylesheet" type="text/css" href="../base.css">
+  </head>
+  <header>
+    <div id="nav">
+      <li>
+        <a href="main.html">Home</a>
+      </li>
+      <li>
+        <a href="exhibit.html">出品する</a>
+      </li>
+      <li>
+        <a href="deal.html">取引</a>
+      </li>
+    </div>
+  </header>
+  <body>
+    <div>
+      <h>取引番号から取引を検索</h><br>
+      <label for="numDeal">取引番号</label>
+      <input type="text" id="numDeal">
+      <p><button class="btn btn-primary" id="deal-search">検索</button></p>
+    </div>
+    <div>
+      <h>商品IDから取引番号を検索</h><br>
+      <label for="">商品ID</label>
+      <input type="text" id="item-id">
+      <p><button class="btn btn-primary" id="numDeal-search">検索</button></p>
+      <h>関連する取引番号→</h>
+      <h id="result"></h>
+    </div>
+    <div>
+      <h3>＊＊取引情報＊＊</h3>
+      <li>借りた人</li>
+      <h id="borrower"></h>
+      <li>借りた人の住所</li>
+      <h id="borrowerAddress"></h>
+      <li>追跡番号１（オーナーによる商品発送時）</li>
+      <h id="trackingNumber1"></h>
+      <li>追跡番号２（返送時）</li>
+      <h id="trackingNumber2"></h>
+      <li>オーナーの商品発送期限</li>
+      <h id="deadline1"></h>
+      <li>借りた人の返送期限</li>
+      <h id="deadline2"></h>
+      <li>オーナーの受け取り確認期限</li>
+      <h id="deadline3"></h>
+      <li>取引の状態</li>
+      <h id="deal-state"></h>
+      <br></br>
+    </div>
+    <div id="actions">
+    </div>
+  </body>
+</html>

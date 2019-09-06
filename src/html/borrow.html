@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>RentalEverything</title>
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/check.js"></script>
+    <script type="text/javascript" src="../js/borrow.js"></script>
+    <link rel="stylesheet" type="text/css" href="../base.css">
+  </head>
+  <header>
+    <div id="nav">
+      <li>
+        <a href="main.html">Home</a>
+      </li>
+      <li>
+        <a href="exhibit.html">出品する</a>
+      </li>
+      <li>
+        <a href="deal.html">取引</a>
+      </li>
+    </div>
+  </header>
+  <body>
+    <div>
+      <li>商品名</li>
+      <h id="name-content"></h>
+      <li>オーナー</li>
+      <h id="lender-content"></h>
+      <li>オーナー（返却先）の住所</li>
+      <h id="lenderAddress-content"></h>
+      <li>デポジット</li>
+      <h id="deposit-content"></h>
+      <li>レンタル料</li>
+      <h id="fee-content"></h>
+      <li>合計金額</li>
+      <h id="sum-content"></h>
+    </div>
+    <div>
+      <br></br>
+      <h>以下を入力してください</h>
+      <br>
+      <label>配送先住所</label>
+      <input type="text" class="form-control" id="borrowerAddress" required>
+    </div>
+    <p><button onclick="borrowRequest()">借りる！</button></p><br>
+    <h>※メタマスクの画面が開きます</h><br>
+    <h>※デポジットやレンタル料はコントラクトにプールされ、問題が起きた場合に引き出せるようになります</h>
+  </body>
+</html>

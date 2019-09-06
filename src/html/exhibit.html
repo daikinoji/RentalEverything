@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rental Everything</title>
+    <script language="javascript" type="text/javascript" src="../js/web3.min.js"></script>
+    <script type="text/javascript" src="../js/check.js"></script>
+    <script type="text/javascript" src="../js/exhibit.js"></script>
+    <link rel="stylesheet" type="text/css" href="../base.css">
+  </head>
+  <header>
+    <div id="nav">
+      <li>
+        <a href="main.html">Home</a>
+      </li>
+      <li>
+        <a href="exhibit.html">出品する</a>
+      </li>
+      <li>
+        <a href="deal.html">取引</a>
+      </li>
+    </div>
+  </header>
+  <body>
+    <div>
+      <div class="form-group">
+        <label for="itemName">商品名</label>
+        <input type="text" class="form-control" id="itemName">
+      </div>
+      <div class="form-group">
+        <label for="description">商品の説明</label>
+        <input type="text" class="form-control" id="description">
+      </div>
+      <div class="form-group">
+        <label>住所</label>
+        <input type="text" class="form-control" id="lenderAddress" >
+      </div>
+      <div class="form-group">
+        <label>デポジット額(ETH)</label>
+        <input type="text" class="form-control" id="deposit" >
+      </div>
+      <div class="form-group">
+        <label>レンタル料(ETH)</label>
+        <input type="text" class="form-control" id="rentalFee" >
+      </div>
+      <div>
+        <label for="imageURL">GoogleDriveにあげた画像のファイルID</label>
+        <input type="text" id="imageURL">
+      </div>
+    <p><button class="btn btn-primary" id="register">登録</button></p><br>
+    </div>
+  </body>
+</html>
